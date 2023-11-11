@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <style>
+        html , body{
+            min-height: 100%;
+            overflow: hidden;
+
+        }
+    </style>
+    
+</head>
+<body cz-shortcut-listen="true">
+
+    <header class="switcher-bar ssss clearfix">
+    
+    <div class="logo textual pull-left">
+    <a href="https://colorlib.com/wp/templates/" title="Switcher">
+    <img src="assets/img/logo.png" alt="Colorlib logo">
+    </a>
+    </div>
+    
+    <div class="product-switcher pull-left">
+    <a href="#" title="Select a Product">Vegefoods <span class="badge">Template</span></a>
+    </div>
+    
+    <div class="remove-btn header-btn pull-right">
+    <a href="#" title="Close this bar" class="icon-remove"></a>
+    </div>
+    
+    <div class="purchase-btn header-btn pull-right">
+    <a href="#" title="Buy now" class="icon-shopping-cart"></a>
+    </div>
+    
+    <div class="mobile-btn header-btn pull-right hidden-xs visible" style="opacity: 1; visibility: visible;">
+    <a href="#" title="Smartphone View" class="icon-mobile-phone"></a>
+    </div>
+    
+    <div class="tablet-btn header-btn pull-right hidden-xs visible" style="opacity: 1; visibility: visible;">
+    <a href="#" title="Tablet View" class="icon-tablet"></a>
+    </div>
+    
+    <div class="desktop-btn header-btn pull-right hidden-xs visible" style="opacity: 1; visibility: visible;">
+    <a href="#" title="Desktop View" class="icon-desktop"></a>
+    </div>
+    </header>
+    
+    <section class="switcher-body">
+    <a href="#" title="Prev" class="icon-chevron-left products-prev hidden disabled" style="display: none;"></a>
+    <div class="products-wrapper">
+    <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto; width: 1396px; height: 0px; margin: 0px; overflow: hidden;"><div class="products-list clearfix" style="text-align: left; float: none; position: absolute; inset: 0px auto auto 698px; margin: 0px; width: 1396px; height: 0px;">
+    </div></div>
+    </div>
+    <a href="#" title="Next" class="icon-chevron-right products-next hidden" style="display: none;"></a>
+    </section>
+    
+    <iframe class="product-iframe" frameborder="0" border="0" src="https://preview.colorlib.com/theme/vegefoods/" style="height: 120rem; width: 100%;"></iframe>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/application.min.js"></script>
+    
+    
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7e480e499e288492&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+    
+    
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
